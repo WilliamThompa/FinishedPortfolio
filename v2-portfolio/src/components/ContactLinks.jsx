@@ -2,7 +2,7 @@ import React from 'react'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 
-function SocialLinks() {
+function ContactLinks() {
   return (
     <div className='flex flex-col top-[35%] left-0 fixed'>
         <ul>
@@ -14,4 +14,4 @@ function SocialLinks() {
   )
 }
 
-export default SocialLinks
+export default ContactLinks
