@@ -20,7 +20,7 @@ function Home() {
                     <Cursor /> {/*Creates the | effect*/}
                 </h2>
                 <p className='text-white py-4 max-w-md'>I've been studying a bachelor's degree in Information Technology.
-                    I have 2 and a half years experience, I like working with React, Tailwind and C#.   
+                    I have 2 and a half years experience, I like working with React, Tailwind, C#, SQL and ASP.   
                 </p>
                 <div>
                     <button className='group text-slate-900 w-fit px-6 py-3 my-2 flex items-center rounded-md bg-yellow-400 font-bold'>
