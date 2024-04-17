@@ -4,10 +4,10 @@ import Image from '../assets/walter.jpg'
 import { TbArrowRightCircle } from "react-icons/tb"
 
 function Home() {
-    const [text] = useTypewriter({
+    const [text] = useTypewriter({ //Typewriter added to rotate between word with a nice effect
         words: ['Student', 'Developer', 'Designer'],
         loop: {},
-        typeSpeed: 150,
+        typeSpeed: 150, //Speed at which its typed
     });
   
     return (
@@ -17,7 +17,7 @@ function Home() {
                 <h2 className='text-4xl sm:text-7xl font-bold text-white pb-2 pr-16'> Hi I'm William</h2>
                 <h2 className='text-4xl sm:text-7xl font-bold text-yellow-400'>
                     I'm a <span>{text}</span>
-                    <Cursor />
+                    <Cursor /> {/*Creates the | effect*/}
                 </h2>
                 <p className='text-white py-4 max-w-md'>I've been studying a bachelor's degree in Information Technology.
                     I have 2 and a half years experience, I like working with React, Tailwind and C#.   
