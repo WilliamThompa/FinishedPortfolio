@@ -9,13 +9,14 @@ function About() {
             </div>
 
             <p className='text-xl mt-5'>
-                Hello There! I'm William Thompson, I consider my sel
+                Hello There! I'm William Thompson, I'm an immigrant who moved to New Zealand from England when I was 10. I'm currently studying a Bachelors Degree in Information Technology. I started studying in 2022, I've been studying for 2 years and 
+                I'm currently in my final year. I enjoy working on databases and web development either Front End or Back End.
             </p>
 
             <br/>
 
-            <p className='text-xl'>
-
+            <p className='text-xl mt-5'>
+                When I'm not studying or at my computer, I'm usually binge watching a show, working out at the gym, hanging out with my friends, or trying to 100% whatever video game I'm playing.
             </p>
         </div>
     </div>
