@@ -14,7 +14,7 @@ function Navbar() { //Navbar sits in an array
     ]
 
     return(
-    <div className='flex justify-between items-center w-full h-20 px-4 text-yellow-400 fixed bg-slate-900'>
+    <div className='flex justify-between items-center w-full h-20 px-4 text-yellow-400 fixed bg-slate-900 z-20'>
         <div>
             <h1 className='text-5xl font-logo ml-2'>Thompa</h1> {/*logo*/}
         </div>
