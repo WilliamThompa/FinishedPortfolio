@@ -9,7 +9,7 @@ function ContactLinks() {
     child: (
       <>
         LinkedIn <FaLinkedin size={40}/>
-      </>
+      </> 
     ),
     href: 'https://linkedin.com',
     style: 'rounded-tr-md'
