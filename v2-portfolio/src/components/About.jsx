@@ -1,6 +1,6 @@
 import React from 'react'
 
-function About() {
+function About() { //Nothing to really comment about here it's all standed stuff
   return (
     <div name="about" className='w-full h-screen bg-gradient-to-b from-blue-950 via-blue-950 to-indigo-950 text-white'>
         <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>

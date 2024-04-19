@@ -2,17 +2,17 @@ import Home from "./components/Home"
 import Navbar from "./components/Navbar"
 import ContactLinks from "./components/ContactLinks"
 import About from "./components/About"
-import Portfolio from "./components/Portfolio"
+import Projects from "./components/Projects"
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Home />
-      <About />
-      <Portfolio />
+      <Navbar /> {/*Where the Navbar is called*/}
+      <Home /> {/*Where Home is called*/}
+      <About /> {/*Where About is called*/}
+      <Projects /> {/*Where Projects is called*/}
 
-      <ContactLinks />
+      <ContactLinks /> {/*Where ContactLinks is called*/}
     </div>
   )  
   
