@@ -55,14 +55,6 @@ function Experience() {
         },
         {
             id: 6,
-            src: Vite,
-            title: "Vite",
-            style: "shadow-purple-500",
-            alt: "Logo for Vite",
-            time: "6 Months of Experience"
-        },
-        {
-            id: 7,
             src: Asp,
             title: "ASP.NET",
             style: "shadow-sky-500",
@@ -70,7 +62,7 @@ function Experience() {
             time: "1 Year of Experience"
         },
         {
-            id: 8,
+            id: 7,
             src: Sql,
             title: "SQL",
             style: "shadow-sky-400",
@@ -78,7 +70,7 @@ function Experience() {
             time: "1 Year of Experience"
         },
         {
-            id: 9,
+            id: 8,
             src: CSharp,
             title: "C#",
             style: "shadow-purple-800",
@@ -86,7 +78,7 @@ function Experience() {
             time: "2 Years of Experience"
         },
         {
-            id: 10,
+            id: 9,
             src: Java,
             title: "Java",
             style: "shadow-orange-700",

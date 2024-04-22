@@ -1,5 +1,5 @@
 import React from 'react' 
-import VSCodeThemeLogo from '../assets/vsCodeThemeLogo.png'
+import VSCodeThemeLogo from '../assets/VSCodeThemeLogo.png'
 
 function Projects() {
     const projects = [ //An array handling my projects

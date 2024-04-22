@@ -5,10 +5,13 @@ import About from "./components/About"
 import Projects from "./components/Projects"
 import Experience from "./components/Experience"
 import Contact from "./components/Contact"
+import LoaderSimple from "./components/LoaderSimple"
 
 function App() {
   return (
     <div>
+      <LoaderSimple />
+
       <Navbar /> {/*Where the Navbar is called*/}
       <Home /> {/*Where Home is called*/}
       <About /> {/*Where About is called*/}

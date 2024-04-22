@@ -2,6 +2,7 @@ import React from 'react'
 import { useTypewriter, Cursor} from 'react-simple-typewriter'
 import Image from '../assets/walter.jpg'
 import { TbArrowRightCircle } from "react-icons/tb"
+import {Link} from 'react-scroll'
 
 function Home() {
     const [text] = useTypewriter({ //Typewriter added to rotate between word with a nice effect
@@ -23,12 +24,12 @@ function Home() {
                     I have 2 and a half years experience, I like working with React, Tailwind, C#, SQL and ASP.   
                 </p>
                 <div>
-                    <button className='group text-slate-900 w-fit px-6 py-3 my-2 flex items-center rounded-md bg-yellow-400 font-bold'>
+                    <Link to="projects" smooth duration={500} className='group text-slate-900 w-fit px-6 py-3 my-2 flex items-center rounded-md bg-yellow-400 font-bold'>
                         Projects
                         <span className='group-hover:rotate-90 duration-300'>
                             <TbArrowRightCircle size={20} className='ml-1'/> {/*Arrow Icon*/}
                         </span>
-                    </button>
+                    </Link>
                 </div>
             </div>
             <div>

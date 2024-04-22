@@ -33,7 +33,7 @@ function Navbar() { //Navbar sits in an array
         {nav && ( //Using the useState tells the navbar to appear when the hamburger icon is clicked
             <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-blue-950 text-white'>
                 {links.map(({id, link}) =>(  //Does the exact same thing as before
-                    <li key={id} className='px-4 cursor-pointer capitalize py-6 text-4xl'>{link}</li>
+                    <li key={id} className='px-4 cursor-pointer capitalize py-6 text-4xl'><Link onClick={() => setNav(!nav)} to={link} smooth duration={500}>{link}</Link></li>
                 ))}
             </ul>
     )}
