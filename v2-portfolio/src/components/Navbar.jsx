@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import {FaBars, FaTimes} from 'react-icons/fa'
+import {Link} from 'react-scroll'
 
 function Navbar() { //Navbar sits in an array
     
@@ -21,7 +22,7 @@ function Navbar() { //Navbar sits in an array
 
         <ul className='hidden md:flex' > {/*Tells the nav bar to hide when below 768px*/}
             {links.map(({id, link}) =>(  //Array in action, used to display nav items
-                <li key={id} className='px-4 cursor-pointer font-bold font-nav text-xl hover:scale-125 duration-500 capitalize text-white'>{link}</li>
+                <li key={id} className='px-4 cursor-pointer font-bold font-nav text-xl hover:scale-125 hover:text-yellow-400 duration-500 capitalize text-white'><Link to={link} smooth duration={500}>{link}</Link></li>
             ))}
         </ul>
 
