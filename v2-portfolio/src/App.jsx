@@ -10,7 +10,7 @@ import LoaderSimple from "./components/LoaderSimple"
 function App() {
   return (
     <div>
-      <LoaderSimple />
+      <LoaderSimple /> {/*Where the LoaderSimple is called*/}
 
       <Navbar /> {/*Where the Navbar is called*/}
       <Home /> {/*Where Home is called*/}

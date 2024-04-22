@@ -2,36 +2,34 @@ import React, { useEffect, useState } from 'react'
 import { motion, useAnimation } from 'framer-motion'
 
 function LoaderSimple(props) {
-    const [loading, setLoading] = useState(true)
-    const controls = useAnimation()
-    const [zaxis, setZAxis] = useState("z-50")
+    const [loading, setLoading] = useState(true) //Used to determine if it's loading or not 
+    const controls = useAnimation() //Used for performing the animation
+    const [zaxis, setZAxis] = useState("z-50") //Used to alter the z axis of the loading screen
 
     useEffect(() => {
-        const timer = setTimeout(() => {
+        const timer = setTimeout(() => { //Is the timeout for the loading screen after 4 seconds it will useEffect to stop the loading
             setLoading(false);
             setZAxis("-z-10")
         }, 4000);
 
-        return () => clearTimeout(timer);
+        return () => clearTimeout(timer); //Clears the Timer
     }, []);
 
-    useEffect(() => {
+    useEffect(() => { //Controls the loading state 
         if (loading) {
             controls.start({
                 opacity: 1,
                 transition: { duration: 2 },
-                z: "z-50"
             });
         } else {
             controls.start({
                 opacity: 0,
                 transition: { duration: 1 },
-                z: "z-0"
             });
         }
     }, [loading, controls]);
 
-    return (
+    return ( // Stores the animation
         <motion.div
             className={`fixed bg-slate-900 h-screen top-0 left-0 w-full flex justify-center items-center ${zaxis}`}
             animate={controls}
