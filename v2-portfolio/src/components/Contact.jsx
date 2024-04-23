@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Footer from './Footer'
 
 function Contact(){
+
   return (
     <div name="contact" className='w-full  bg-gradient-to-b from-slate-900 via-slate-900 to-blue-950 p-4 text-white'>
         <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto w-full h-full'>
@@ -12,7 +13,7 @@ function Contact(){
             <p className='py-5 text-xl'>Submit a message below to message me</p>
 
             <div className='flex justify-center items-center'>
-                <form action='https://getform.io/f/ebpdxrxb' method='POST' className='flex flex-col w-full md:w-1/2' target='_blank'> {/* Form that handles all contact requests */}
+                <form name="myform" action='https://getform.io/f/ebpdxrxb' method='POST' className='flex flex-col w-full md:w-1/2'> {/* Form that handles all contact requests */}
                     <input type='text' name='name' placeholder='Who Are You?' className='p-2 bg-transparent border-2 border-yellow-400 rounded-md text-white focus:outline-none' required/> {/* Name input field set to required */}
                     <input type='text' name='email' placeholder='What is your Email?' className='my-4 p-2 bg-transparent border-2 border-yellow-400 rounded-md text-white focus:outline-none' required/> {/* Email input field set to required */}
                     <textarea name='message' rows="10" placeholder='Enter your message' className='p-2 bg-transparent border-2 border-yellow-400 rounded-md focus:outline-none' required/> {/* Message input field set to required */}
