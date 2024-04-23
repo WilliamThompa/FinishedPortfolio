@@ -32,7 +32,7 @@ function Home() {
                 </div>
             </div>
             <div>
-                <img src={Image} alt="Photograph of Me" className='rounded-2xl mx-10 w-2/3 md:w-full'/> {/*Image*/}
+                <img src={Image} alt="Photograph of Me" className='rounded-2xl mx-10 w-2/3 md:w-full' loading='eager'/> {/*Image*/}
             </div>
         </div>
         <Footer />
