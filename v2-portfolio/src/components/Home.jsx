@@ -2,7 +2,8 @@ import React from 'react'
 import { useTypewriter, Cursor} from 'react-simple-typewriter'
 import Image from '../assets/walter.jpg'
 import { TbArrowRightCircle } from "react-icons/tb"
-import {Link} from 'react-scroll'
+import {Link} from 'react-router-dom'
+import Footer from './Footer'
 
 function Home() {
     const [text] = useTypewriter({ //Typewriter added to rotate between word with a nice effect
@@ -21,14 +22,12 @@ function Home() {
                     <Cursor /> {/*Creates the | effect*/}
                 </h2>
                 <p className='text-white py-4 max-w-md'>I've been studying a bachelor's degree in Information Technology.
-                    I have 2 and a half years experience, I like working with React, Tailwind, C#, SQL and ASP.   
+                    I have 2 and a half years experience, I like working with React, Tailwind, SQL and ASP.   
                 </p>
                 <div>
-                    <Link to="projects" smooth duration={500} className='group text-slate-900 w-fit px-6 py-3 my-2 flex items-center rounded-md bg-yellow-400 font-bold'>
+                    <Link to="/projects" smooth duration={500} className='group text-slate-900 w-fit px-6 py-3 my-2 flex items-center rounded-md bg-yellow-400 font-bold hover:scale-110 duration-300 cursor-pointer'>
                         Projects
-                        <span className='group-hover:rotate-90 duration-300'>
-                            <TbArrowRightCircle size={20} className='ml-1'/> {/*Arrow Icon*/}
-                        </span>
+                        <TbArrowRightCircle size={20} className='ml-1'/> {/*Arrow Icon*/}
                     </Link>
                 </div>
             </div>
@@ -36,6 +35,7 @@ function Home() {
                 <img src={Image} alt="Photograph of Me" className='rounded-2xl mx-10 w-2/3 md:w-full'/> {/*Image*/}
             </div>
         </div>
+        <Footer />
     </div>
   )
 }

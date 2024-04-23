@@ -1,14 +1,15 @@
 import React from 'react'
+import Footer from './Footer'
 
 function Contact(){
   return (
-    <div name="contact" className='w-full h-screen bg-gradient-to-b from-blue-950 via-blue-950 to-indigo-950 p-4 text-white'>
-        <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full'>
-            <div className='pb-4'>
+    <div name="contact" className='w-full  bg-gradient-to-b from-slate-900 via-slate-900 to-blue-950 p-4 text-white'>
+        <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto w-full h-full'>
+            <div className='pb-4 mt-20'>
                 <p className='text-5xl font-bold inline border-b-4 border-yellow-400 text-yellow-400'>Contact.</p>
             </div>
 
-            <p className='py-5 text-xl'>Submit the form below to message me</p>
+            <p className='py-5 text-xl'>Submit a message below to message me</p>
 
             <div className='flex justify-center items-center'>
                 <form action='https://getform.io/f/ebpdxrxb' method='POST' className='flex flex-col w-full md:w-1/2' target='_blank'> {/* Form that handles all contact requests */}
@@ -19,6 +20,7 @@ function Contact(){
                 </form>
             </div>
         </div>
+        <Footer />
     </div>
   )
 }
