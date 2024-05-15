@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import VSCodeThemeLogo from "../assets/VSCodeThemeLogo.png";
 import RecipeFinder from "../assets/RecipeFinder.png";
+import Commerce from "../assets/Commerce.png"
 import LoaderPage from "./LoaderPage";
 import Footer from "./Footer";
 
@@ -26,6 +27,16 @@ function Projects() {
       button2: "API Used",
       alt: "Logo for recipe finder app",
     },
+    {
+      id: 3,
+      src: Commerce,
+      href1: "https://github.com/WilliamThompa/Commerce-Store-Using-API",
+      href2: "",
+      button1: "Repo",
+      button2: "",
+      alt: "Logo for commerce website",
+    },
+    
   ];
 
   return (

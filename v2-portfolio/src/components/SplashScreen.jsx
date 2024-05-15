@@ -2,7 +2,6 @@ import React from 'react'
 
 function SplashScreen() {
     let intro = intro
-    let logo = 
 
   return (
     <div name="intro" className='fixed z-10 p-0 w-full h-screen bg-slate-900 duration-1000'>

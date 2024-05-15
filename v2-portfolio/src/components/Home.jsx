@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTypewriter, Cursor} from 'react-simple-typewriter'
-import Image from '../assets/walter.jpg'
+import Image from '../assets/William.jpg'
 import { TbArrowRightCircle } from "react-icons/tb"
 import {Link} from 'react-router-dom'
 import Footer from './Footer'
@@ -32,7 +32,7 @@ function Home() {
                 </div>
             </div>
             <div>
-                <img src={Image} alt="Photograph of Me" className='rounded-2xl mx-10 w-2/3 md:w-full' loading='eager'/> {/*Image*/}
+                <img src={Image} alt="Photograph of Me" className='rounded-2xl mx-10 w-2/3 md:w-full border-2 border-yellow-400 shadow-yellow-400 shadow-lg' loading='eager'/> {/*Image, should have been walter smh*/}
             </div>
         </div>
         <Footer />
