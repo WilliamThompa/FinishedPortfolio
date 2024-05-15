@@ -52,7 +52,7 @@ function Experience() {
             title: "Tailwind",
             style: "shadow-white",
             alt: "Logo for Tailwind",
-            time: "6 Months of Experience"
+            time: "5 Months of Experience"
         },
         {
             id: 6,
