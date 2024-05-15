@@ -1,4 +1,4 @@
-#William Thompsons Portfolio Website
+William Thompsons Portfolio Website
 
 Made using ReactJS
 
